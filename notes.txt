@@ -13,3 +13,5 @@ Always start with capital letter
 
 Must return JSX
 
+Snippet to Create new component:
+rafce

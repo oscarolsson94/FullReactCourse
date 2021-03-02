@@ -1,0 +1,9 @@
+Prettier - Code formatter
+ES7 React/Redux/GraphQL/React-Native Snippets
+
+In setup.json:
+
+"emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+
