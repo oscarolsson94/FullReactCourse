@@ -15,3 +15,18 @@ Must return JSX
 
 Snippet to Create new component:
 rafce
+
+
+
+JSX Rules:
+
+* Return ONE single element
+- div / section / article or Fragment (<></>)
+
+* Use camelCase for html attributes (ex. onClick)
+
+* className instead of className (className='')
+
+* Close every element <img src='' alt='' />
+
+* Formatting (use () in return statements for clarity)
