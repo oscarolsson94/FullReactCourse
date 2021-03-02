@@ -7,3 +7,9 @@ npm install sudo .. -g         (global install)
 
 
 
+Components:
+
+Always start with capital letter
+
+Must return JSX
+
