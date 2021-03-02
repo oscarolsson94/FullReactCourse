@@ -1,0 +1,15 @@
+pwd - gives the full path to current working directory
+
+ls - show a list of the directories at your current path
+
+ls -a - shows your hidden folders
+
+cd "foler name" - navigate to a specific folder
+
+cd .. - go back one folder
+
+clear - clear console
+
+arrow key up/down - last commands you ran
+
+mkdir "folder name" - make a new folder
