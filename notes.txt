@@ -1,0 +1,9 @@
+npm init -y
+npx create-react-app "project name"
+npm install .. .. ..
+npm install .. --save-dev
+npm install sudo .. -g         (global install)
+=> enter password for user
+
+
+
