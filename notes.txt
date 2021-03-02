@@ -30,3 +30,6 @@ JSX Rules:
 * Close every element <img src='' alt='' />
 
 * Formatting (use () in return statements for clarity)
+
+
+INLINE CSS always wins over css-files
