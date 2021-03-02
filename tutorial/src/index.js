@@ -3,8 +3,9 @@ import ReactDom from 'react-dom';
 
  function Greeting() {
      return (
-         <div>
-             <h1>This is Oscar and this is my first component</h1>
+         <div>    
+             <Person />
+             <Message />
          </div>
      );
  }
@@ -13,6 +14,10 @@ import ReactDom from 'react-dom';
 //     return React.createElement('h1', {}, 'hello world');
 // }
 
+const Person = () => <h2>john doe</h2>;
 
+const Message = () => {
+    return <p>this is my message</p>;
+}
 
 ReactDom.render(<Greeting />, document.getElementById('root'));
