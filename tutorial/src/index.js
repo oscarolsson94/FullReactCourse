@@ -1,17 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
-import Book from './Book';
 //CSS
 import './index.css';
 
 //setup vars
 import { books } from './books';
-
-// const names = ["john", "peter", "susan"];
-// const newNames = names.map(name => {
-//     return <h1>{name}</h1>;
-// });
-
+import Book from './Book';
 
  function BookList() {
      return (

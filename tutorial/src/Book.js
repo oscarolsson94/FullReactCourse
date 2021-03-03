@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Book = ({ img, title, author }) => {
     // const { img, title, author } = props;
 
@@ -16,4 +18,6 @@ const Book = ({ img, title, author }) => {
         </article>
     );
 };
+
+export default Book;
 
