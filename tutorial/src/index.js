@@ -4,8 +4,8 @@ import ReactDom from 'react-dom';
 import './index.css';
 
 //setup vars
-import { books } from './books';
-import Book from './Book';
+import { books } from './books'; //export as named export
+import Book from './Book'; //default export
 
  function BookList() {
      return (

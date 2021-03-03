@@ -42,3 +42,17 @@ onClick={clickHandler} //call a function on click
 
 onClick={() => comeplexExample(author)} // if you have to send an argument to the function on click
                                         // without arrow function it will be called on page reload also
+
+
+HOW TO HOST ON WEB:
+
+netlify/heroku
+
+netlify (QUICK):
+npm run build    <--- production build
+
+drag build-folder to netlify
+
+
+
+Continous integration (through git):
