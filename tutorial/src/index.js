@@ -50,7 +50,7 @@ const Book = ({ img, title, author }) => {
     // attribute, eventHandler
     // onClick, onMouseOver
     const clickHandler = () => {
-        alert("Hello world")
+        alert(title)
     }
 
     return (

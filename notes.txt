@@ -33,3 +33,12 @@ JSX Rules:
 
 
 INLINE CSS always wins over css-files
+
+
+
+Event handlers:
+
+onClick={clickHandler} //call a function on click
+
+onClick={() => comeplexExample(author)} // if you have to send an argument to the function on click
+                                        // without arrow function it will be called on page reload also
