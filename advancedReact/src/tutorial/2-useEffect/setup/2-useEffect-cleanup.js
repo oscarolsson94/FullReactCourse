@@ -12,16 +12,16 @@ const UseEffectCleanup = () => {
 
     useEffect(() => {
         window.addEventListener("resize", checkSize);
-        return () => { //cleanup function to prevent memory leak
-            window.removeEventListener('resize', checkSize);
-        }
+        // return () => { //cleanup function to prevent memory leak
+        //     window.removeEventListener('resize', checkSize);
+        // }
 
-    });
+    },[]); //only run useEffect on initial render, meaning only add one eventListener
 
     return (
         <>
             <h1>window</h1>
-            <h2>{size}</h2>
+            <h2>{size} px</h2>
         </>
     );
 };
