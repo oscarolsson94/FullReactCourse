@@ -1,7 +1,13 @@
 import React, { useState } from 'react';
 
 const UseStateBasics = () => {
-  return <h2>useState basic example</h2>;
+
+    const [text, setText] = useState("random title");
+
+    return <React.Fragment>
+        <h1>{text}</h1>
+    </React.Fragment>;
+    
 };
 
 export default UseStateBasics;
