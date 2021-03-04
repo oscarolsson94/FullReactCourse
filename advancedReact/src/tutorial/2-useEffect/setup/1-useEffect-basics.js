@@ -10,7 +10,11 @@ const UseEffectBasics = () => {
         if (value > 0) {
             document.title = `New Messages(${value})`;
         }      
-    });
+    }, [value]);
+    
+    useEffect(() => { // can have multiple useEffects
+        console.log("hello world");
+    })
 
     return <>
         <h1>{value}</h1>
