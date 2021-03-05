@@ -26,6 +26,7 @@ const Index = () => {
         } else {
             dispatch({ type: "NO_VALUE" });
         }
+        setName("");
     };
 
     const closeModal = () => {
