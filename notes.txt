@@ -56,3 +56,11 @@ drag build-folder to netlify
 
 
 Continous integration (through git):
+
+
+
+Short-Circuit Evaluation:
+
+{text && <h1>hello world</h1>} -> if text is true, then return the h1. Otherwise dont return anything.
+
+{<h1>{text || "john doe"}</h1>} -> if text is true, return text. Otherwise return "john doe"
