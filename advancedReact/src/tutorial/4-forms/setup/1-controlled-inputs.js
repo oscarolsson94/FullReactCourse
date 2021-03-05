@@ -9,11 +9,20 @@ const ControlledInputs = () => {
 
     const [firstName, setFirstName] = useState(""); // value attribute connects state variables to form fields
     const [email, setEmail] = useState("");
+    const [people, setPeople] = useState([]);
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(firstName, email);
-
+        if (firstName && email) { // only submit when both of the fields have values
+            const person = {
+                id: new Date().getTime().toString(),
+                firstName,
+                email
+            };
+            setPeople([...people, person]);
+            setFirstName("");
+            setEmail("");
+        }
     }
 
     return (
@@ -42,6 +51,15 @@ const ControlledInputs = () => {
                     </div>
                     <button typ="submit">add person</button>
                 </form>
+                {
+                    people.map((person) => {
+                        const { id, firstName, email } = person;
+                        return <div className="item" key={id}>
+                            <h4>{firstName} </h4>
+                            <p>{email} </p>
+                        </div>
+                    })
+                }
         </article>
     </>
     );
