@@ -1,2 +1,9 @@
 https://uidesigndaily.com/
 https://www.johnsmilga.com/
+
+For Icons:
+npm install react-icons
+
+react-icons.github.io (find the icon you need)
+
+import {nameOfIcon} from 'react-icons/${lib}'
