@@ -7,3 +7,5 @@ npm install react-icons
 react-icons.github.io (find the icon you need)
 
 import {nameOfIcon} from 'react-icons/${lib}'
+
+Icons come as COMPONENTS
