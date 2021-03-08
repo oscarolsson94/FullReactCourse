@@ -1,6 +1,8 @@
-npm install axios moment react-file-base64 redux redux-thunk 
+npm install axios moment react-file-base64 redux redux-thunk @material-ui/core
 
 axois - API requests
 moment - library for working with time and date
 react-file-base64 - convert images
 redux-thunk - used for async actions using redux
+
+@material-ui/core - create UI without a lot of styling
