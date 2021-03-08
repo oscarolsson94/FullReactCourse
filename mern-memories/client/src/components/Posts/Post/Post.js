@@ -28,7 +28,15 @@ const Post = ({post}) => {
                  <Typography className={classes.title} variant="h5" gutterBottom>{post.message}</Typography>
             </CardContent>
             <CardActions className={classes.cardActions}>
-
+                <Button size="small" color="primary" onClick={()=>{}}>
+                    <ThumbUpAltIcon fontSize="small" />
+                    Like
+                    {post.likeCount}
+                </Button>
+                <Button size="small" color="primary" onClick={()=>{}}>
+                    <DeleteIcon fontSize="small" />
+                    Delete
+                </Button>
             </CardActions>
 
         </Card>
