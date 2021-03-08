@@ -1,3 +1,8 @@
+import express from 'express';
+import mongoose from 'mongoose';
+
+const router = express.Router();
+
 import PostMessage from "../models/postMessage.js";
 
 // get all posts in DB
@@ -24,3 +29,5 @@ export const createPost = async (req, res) => {
         res.status(409).json({ message: error.message });
     }
 };
+
+export default router;
