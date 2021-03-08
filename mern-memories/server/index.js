@@ -1,9 +1,13 @@
 import express from 'express';
-import bodyparser from 'body-parser';
+import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
 
+import postRoutes from './routes/posts.js';
+
 const app = express();
+
+app.use("/posts", postRoutes); // starting path for all the routes in posts.js
 
 app.use(bodyParser.json({ limit: "30mb", extended: true })); //prevents image files from being too big
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true })); 
