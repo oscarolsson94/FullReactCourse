@@ -7,12 +7,12 @@ import postRoutes from './routes/posts.js';
 
 const app = express();
 
-app.use("/posts", postRoutes); // starting path for all the routes in posts.js
-
 app.use(bodyParser.json({ limit: "30mb", extended: true })); //prevents image files from being too big
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true })); 
 
-app.use(cors());
+app.use(cors()); // must be declared BEFORE routes..
+
+app.use("/posts", postRoutes); // starting path for all the routes in posts.js
 
 // connect to DB
 const CONNECTION_URL = "mongodb+srv://test:test123@cluster0.gfsfw.mongodb.net/oscarDB?retryWrites=true&w=majority";

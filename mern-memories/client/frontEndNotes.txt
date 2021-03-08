@@ -6,3 +6,8 @@ react-file-base64 - convert images
 redux-thunk - used for async actions using redux
 
 @material-ui/core - create UI without a lot of styling
+
+
+add in client side package.json to make requests to server work:
+(our server):
+"proxy": "http://localhost:5000",
