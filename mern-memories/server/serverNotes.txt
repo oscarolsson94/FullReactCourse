@@ -3,3 +3,6 @@ npm install body-parser cors express mongoose nodemon
 
 under main i package.json för att använda moderna imports:
 "type": "module",
+
+script:
+"start": "nodemon index.js"
