@@ -1,4 +1,3 @@
-import React from 'react'
 
 const isLoggedReducer = (state = false, action) => {
     switch (action.type) {
