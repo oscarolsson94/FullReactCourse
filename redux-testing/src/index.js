@@ -33,6 +33,8 @@ const counter = (state = 0, action) => {
 let store = createStore(counter);
 
 //DISPATCH
+store.dispatch(increment());
+
 
 ReactDOM.render(
   <React.StrictMode>
