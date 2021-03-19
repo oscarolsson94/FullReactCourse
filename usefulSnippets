@@ -1,0 +1,29 @@
+FETCH DATA FROM API:
+
+const fetchData = async () => {
+
+    try{
+        const response = await fetch(url);
+        const myList = await responce.json();
+        setData(myList);
+    }
+    catch(error){
+        console.log(error);
+    }
+}
+
+useEffect(() => {
+    fetchData();
+}, []);
+
+--------------------------------------------------------
+SIMPLE TOGGLE READ MORE
+
+const [readMore, setReadMore] = useState(false);
+
+<p>
+    {readMore ? info : `${info.substring(0, 200)}...`}
+    <button onClick={() => setReadMore(!readMore)}>
+        {readMore ? 'show less' : '  read more'}
+    /button>
+</p>
