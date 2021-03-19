@@ -2,14 +2,19 @@ FETCH DATA FROM API:
 
 const fetchData = async () => {
 
-    try{
-        const response = await fetch(url);
-        const myList = await responce.json();
-        setData(myList);
-    }
-    catch(error){
-        console.log(error);
-    }
+fetch(url).then((response) => {
+  if (response.ok) {
+    return response.json();
+  } else {
+    throw new Error('Something went wrong');
+  }
+})
+.then((responseJson) => {
+  // Do something with the response
+})
+.catch((error) => {
+  console.log(error)
+});
 }
 
 useEffect(() => {
@@ -22,8 +27,9 @@ SIMPLE TOGGLE READ MORE
 const [readMore, setReadMore] = useState(false);
 
 <p>
-    {readMore ? info : `${info.substring(0, 200)}...`}
+    {readMore ? text : `${text.substring(0, 200)}...`}
     <button onClick={() => setReadMore(!readMore)}>
         {readMore ? 'show less' : '  read more'}
     /button>
 </p>
+---------------------------------------------------------
